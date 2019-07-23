@@ -1,0 +1,43 @@
+CREATE TABLE `OrderTable` (
+  `OrderId` int(11) NOT NULL,
+  `StudentPhone` bigint(50) DEFAULT NULL,
+  `RestaurantId` int(11) DEFAULT NULL,
+  `OrderDate` date DEFAULT NULL,
+  `OrderTime` time DEFAULT NULL,
+  `TotalAmount` int(11) NOT NULL,
+  `OrderStatus` int(11) NOT NULL DEFAULT '0',
+  `CookingStatus` int(11) NOT NULL DEFAULT '0',
+  `DeliveryStatus` int(11) NOT NULL DEFAULT '0',
+  `PaymentStatus` int(11) NOT NULL DEFAULT '0'
+)
+
+CREATE TABLE `RestaurantConn` (
+  `RestaurantId` bigint(20) NOT NULL,
+  `Name` char(100) DEFAULT NULL,
+  `AdhaarNumber` bigint(20) DEFAULT NULL,
+  `Address` char(255) DEFAULT NULL,
+  `OpenTime` time DEFAULT NULL,
+  `CloseTime` time DEFAULT NULL,
+  `Email` varchar(30) NOT NULL
+) 
+
+CREATE TABLE `RestaurantMenu` (
+  `RestaurantId` bigint(20) DEFAULT NULL,
+  `ItemId` int(11) DEFAULT NULL,
+  `ItemName` char(50) DEFAULT NULL,
+  `ItemPrice` float DEFAULT NULL,
+  `Ingrediant` char(255) DEFAULT NULL,
+  `ItemPic` char(255) DEFAULT NULL
+)
+
+CREATE TABLE `UserDetails` (
+  `PhoneNo` bigint(21) NOT NULL,
+  `Name` varchar(30) DEFAULT NULL,
+  `EmailID` varchar(30) DEFAULT NULL,
+  `Block` tinyint(1) NOT NULL
+) 
+
+CREATE TABLE `CounterTable` (
+  `TableName` char(100) NOT NULL,
+  `count` int(11) DEFAULT NULL
+) 
