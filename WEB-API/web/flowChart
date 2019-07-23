@@ -1,0 +1,44 @@
+Student Side:-
+
+Main Activity
+
+StudentOtp 
+
+RestaurantPage (displaying restaurant names)
+subpart:- RestaurantCustomView
+
+ItemsList (displaying item names of particular restaurant)
+subpart:- ItemsListCustomView
+
+ShoppingCart:- (displaying items in the cart with the sub total)
+subpart:- ShoppingCartCustomView
+
+PayUMethod:- (for payment)
+
+BillingPage:- (displaying final bill of the customer)
+subpart:- BillingPageCustomView
+
+TransactionHistory:- (displaying order history of student)
+subpart:- TransactionCustomView
+
+StudentAccount:- (displaying student home page)
+
+TrackOrder:- (tracking current order status)
+
+Restaurant Side:-
+
+Main Activity
+
+RestaurantOtp
+
+NewOrderActivity (displaying new orders to restaurant)
+subpart:- NewOrderCustomView
+
+AcceptedOrder (displaying accepted orders to restaurant)
+subpart:- AcceptedOrderCustomView
+
+RestaurantBills (displaying order history to restaurant)
+subpart:- RestaurantBillsCustomView
+
+RestaurantAccounts (displaying order history to restaurant)
+subpart:- RestaurantBillsCustomView
